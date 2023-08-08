@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
+title: "Liarsa's Blog"
+subtitle: "Liarsa's Blog"
 description: ''
 keywords:
-author: John Doe
-language: zh-CN
+author: Liarsa Shepard
+language: en
 timezone: ''
 
 # URL
@@ -102,4 +102,5 @@ theme: fluid
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type:
+
