@@ -9,7 +9,7 @@ tags:
 categories:
     - 技术
 index_img: /img/bg/wallhaven-vqdmxm.png
-banner_img: /img/bg/wallhaven-vqdmxm.png
+# banner_img: /img/bg/wallhaven-vqdmxm.png
 ---
 
 
