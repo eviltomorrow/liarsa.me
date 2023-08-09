@@ -17,3 +17,4 @@ index_img: https://liarsa-me.oss-cn-beijing.aliyuncs.com/img/logo/kubernetes.png
 Kubernetes 抽象了数据中心的硬件基础设施，使得对外暴露的只是一个巨大的资源池。Kubernetes 帮助企业标准化了云端部署及内部部署的应用交付方式。
 
 # 1.Kubernetes 系统的需求
+
