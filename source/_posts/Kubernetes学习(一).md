@@ -53,4 +53,10 @@ Docker 是一个打包、分发和运行应用程序的平台。
 
 容器和虚拟机对比  
 
- ![容器和虚拟机对比](/img/article/kubernetes/vm-vs-docker.png)
+ ![容器和虚拟机对比](/img/article/kubernetes/vm_docker_description.png)
+
+# 3.Kubernetes 介绍
+
+Kubernetes是一个容器调度管理系统，整个系统由一个主节点和若干个工作节点组成。
+
+ ![Kubernetes 系统图](/img/article/kubernetes/kubernetes_deployment_platform.png)
