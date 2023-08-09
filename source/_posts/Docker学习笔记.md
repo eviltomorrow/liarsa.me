@@ -8,7 +8,7 @@ tags:
     - Docker
 categories:
     - 技术
-index_img: https://liarsa-me.oss-cn-beijing.aliyuncs.com/img/bg/wallhaven-vqdmxm.png
+index_img: /img/bg/wallhaven-vqdmxm.png
 # banner_img: /img/bg/wallhaven-vqdmxm.png
 ---
 
