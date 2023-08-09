@@ -8,6 +8,6 @@ tags:
     - Kubernetes
 categories:
     - 技术
-index_img: /img/logo/kubernetes.png
+index_img: https://liarsa-me.oss-cn-beijing.aliyuncs.com/img/logo/kubernetes.png
 # banner_img: /img/bg/wallhaven-vqdmxm.png
 ---
