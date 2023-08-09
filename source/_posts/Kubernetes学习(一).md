@@ -57,6 +57,45 @@ Docker 是一个打包、分发和运行应用程序的平台。
 
 # 3.Kubernetes 介绍
 
+## 3.1 Kubernetes 的核心功能
+
 Kubernetes是一个容器调度管理系统，整个系统由一个主节点和若干个工作节点组成。
 
  ![Kubernetes 系统图](/img/article/kubernetes/kubernetes_deployment_platform.png)
+
+ - 帮助开发者聚焦核心应用功能
+
+ - 帮助运维团队获取更高的资源利用率
+
+## 3.2 Kubernetes 集群架构
+
+从硬件级别，一个 Kubernetes 集群由很多节点组成。
+
+ - 主节点：承载 Kubernetes 控制和管理整个集群系统的控制面板
+
+ - 工作节点：运行用户实际部署的应用
+
+ ![Kubernetes 组件架构图](/img/article/kubernetes/kubernetes_architecture.png)
+
+<b>控制面板</b>
+
+控制面板用于控制集群并使它工作。
+
+ - Kubernetes API 服务器：负责各组件的通信
+ - Scheduler：负责调度应用
+ - Controller Manager：负责集群级别的功能（复制组件、跟踪工作节点，处理节点失败等）
+ - Etcd：负责持久化存储集群配置
+
+<b>工作节点</b>
+
+工作节点是运行容器化应用的机器。
+
+ - Docker、rtk 或其他容器类型
+ - Kubelet 与 API 服务器通信，管理它所在节点的容器
+ - Kubernetes Service Proxy（kube-proxy）负责组件之间的负载均衡网络流量
+
+## 3.4 在 Kubernetes 中运行应用
+
+为了在 Kubernetes 中运行应用，首先需要将应用打包进一个或多个容器镜像。再将镜像推送到镜像仓库，然后将应用的描述发布到 Kubernetes API 服务器。
+
+ ![Kubernetes 运行应用](/img/article/kubernetes/kubernetes_run_application.png)
