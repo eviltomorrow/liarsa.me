@@ -1,9 +1,10 @@
 ---
-title: Kubernetes 学习（一）
+title: 《Kubernetes in action》（一）
 catalog: true
 date: 2023-08-09 10:00:00
-subtitle: 《Kubernetes in action》笔记（一）
+subtitle: Kubernetes 介绍
 tags:
+    - 《Kubernetes in Action》
     - 容器
     - Kubernetes
 categories:
@@ -99,3 +100,11 @@ Kubernetes是一个容器调度管理系统，整个系统由一个主节点和�
 为了在 Kubernetes 中运行应用，首先需要将应用打包进一个或多个容器镜像。再将镜像推送到镜像仓库，然后将应用的描述发布到 Kubernetes API 服务器。
 
  ![Kubernetes 运行应用](/img/article/kubernetes/kubernetes_run_application.png)
+
+## 3.5 使用 Kubernetes 的好处
+
+ - 简化应用程序部署
+ - 更好地利用硬件
+ - 健康检查和自修复
+ - 自动扩容
+ - 简化应用部署
