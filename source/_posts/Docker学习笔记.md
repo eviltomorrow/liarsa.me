@@ -8,7 +8,7 @@ tags:
     - Docker
 categories:
     - 技术
-index_img: /img/bg/wallhaven-vqdmxm.png
+index_img: /img/logo/docker.jpg
 # banner_img: /img/bg/wallhaven-vqdmxm.png
 ---
 
