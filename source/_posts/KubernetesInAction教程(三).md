@@ -74,5 +74,5 @@ $ kubectl create -f kubia-manaul.yaml
 <hr/>
 <b>参考：</b>
 <ul>
-    <li>[1] <a href="https://developer.aliyun.com/article/745468" style="font-weight: bold;">[Kubernetes必备知识： Pod网络模型]</a></li>
+    <li>[1] <a href="https://www.cnblogs.com/arnoldlu/p/13055501.html" style="font-weight: bold;">[OverlayFS初识以及使用]</a></li>
 </ul>
