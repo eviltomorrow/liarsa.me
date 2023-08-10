@@ -14,3 +14,9 @@ index_img: https://liarsa-me.oss-cn-beijing.aliyuncs.com/img/logo/kubernetes.png
 ---
 
 # 开始使用 Kubernetes 和 Docker
+
+## 1. 运行 Hello world 容器
+
+```shell
+$ docker run busybox echo "Hello world"
+```
