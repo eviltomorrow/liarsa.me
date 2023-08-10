@@ -37,6 +37,39 @@ Kubernetes 集群中的所有 Pod 都在同一个共享网络地址空间中，�
 
 ![Pod 平面网络](/img/article/kubernetes/pod_platform_network.png)
 
+## 2. 以 YAML 或 JSON 描述文件创建 Pod
+
+### 2.1. Pod 定义的组成部分：
+
+ - apiVersion: Kubernetes API 版本。
+ - kind: 描述的资源类型。
+ - metadata: 包括名称、命名空间、标签和关于该容器的其他信息。
+ - spec: 包含 Pod 内容的实际说明。
+ - status: 包括运行中的 Pod 的当前信息。
+
+### 2.2. 创建一个简单的 YAML 描述文件（kubia-manual.yaml）
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kubia-manual
+spec:
+  containers:
+    - image: luksa/kubia
+      name: kubia
+      ports:
+        - containerPort: 8080
+          protocol: TCP
+```
+
+### 2.3. 使用 kubectl create 来创建 Pod
+
+```shell
+$ kubectl create -f kubia-manaul.yaml
+```
+
+
 
 <hr/>
 <b>参考：</b>
