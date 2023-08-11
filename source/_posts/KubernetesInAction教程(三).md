@@ -66,13 +66,18 @@ spec:
 ### 2.3. 使用 kubectl create 来创建 Pod
 
 ```shell
+# 创建 pod
 $ kubectl create -f kubia-manaul.yaml
+
+# 查看 pod 列表
+$ kubectl get pods
 ```
 
+### 2.4. 查看应用程序日志
 
 
 <hr/>
 <b>参考：</b>
 <ul>
-    <li>[1] <a href="https://www.cnblogs.com/arnoldlu/p/13055501.html" style="font-weight: bold;">[OverlayFS初识以及使用]</a></li>
+    <li>[1] <a href="https://developer.aliyun.com/article/745468" style="font-weight: bold;">[Kubernetes必备知识： Pod网络模型]</a></li>
 </ul>
