@@ -75,6 +75,8 @@ $ kubectl get pods
 
 ### 2.4. 查看应用程序日志
 
+```sh
+sh
 
 <hr/>
 <b>参考：</b>
