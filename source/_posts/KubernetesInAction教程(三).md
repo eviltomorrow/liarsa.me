@@ -162,6 +162,41 @@ $ kubectl get pod -l '${label_name} in (${label_value1}, ${label_value2}, ...),.
 $ kubectl get pod -l '${label_name} notin (${label_value1}, ${label_value2}, ...),...'
 ```
 
+### 3.5. 使用标签分类工作节点
+
+将 pod 调度到特定接点
+```sh
+$ kubectl label node ${node_name} gpu=true
+```
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kubia-gpu
+spec:
+  nodeSelector:
+    gpu: "true"
+  containers:
+    - image: luksa/kubia
+      name: kubia
+      ports:
+        - containerPort: 8080
+          protocol: TCP
+```
+注意：标签选择器应考虑符合特定标准的逻辑节点组。
+
+### 3.6. 注解 pod
+
+注解是键值对。可以容纳更多信息，主要用于工具使用，提供对象说明。
+
+添加或修改注解
+
+```sh
+$ kubectl annotate pod ${pod_name} ${annotation_name}=${annotation_value}
+```
+
+### 3.7. 使用命名空间对资源进行分组
+
 
 
 <hr/>
