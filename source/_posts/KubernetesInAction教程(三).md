@@ -197,6 +197,37 @@ $ kubectl annotate pod ${pod_name} ${annotation_name}=${annotation_value}
 
 ### 3.7. 使用命名空间对资源进行分组
 
+Kubernetes 命名空间简单地为对象名称提供一个作用域。
+
+创建命名空间
+
+```yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: custom-namespace
+```
+
+```sh
+$ kubectl create namespace ${namespace_name}
+
+$ kubectl create -f kubia-manaul.yaml -n ${namespace_name}
+```
+
+### 3.8. 停止和移除 pod
+
+```sh
+$ kubectl delete pod ${pod_name}
+ 
+$ kubectl delete pod -l ${label_name}=${label_value}
+
+$ kubectl delete ns ${namespace_name} # 删除整个命名空间
+
+$ kubectl delete pod --all # 删除当前命名空间中的所有 pod,
+
+$ kubectl delete all --all # 删除当前命名空间中几乎所有的对象（派出 secret）
+```
+
 
 
 <hr/>
