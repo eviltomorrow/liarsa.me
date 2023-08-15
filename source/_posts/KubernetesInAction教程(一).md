@@ -54,7 +54,7 @@ Docker 是一个打包、分发和运行应用程序的平台。
 
 容器和虚拟机对比  
 
- ![容器和虚拟机对比](/img/article/kubernetes/vm_docker_description.png)
+ ![容器和虚拟机对比](/img/illustration/kubernetes/vm_docker_description.png)
 
 # 3.Kubernetes 介绍
 
@@ -62,7 +62,7 @@ Docker 是一个打包、分发和运行应用程序的平台。
 
 Kubernetes是一个容器调度管理系统，整个系统由一个主节点和若干个工作节点组成。
 
- ![Kubernetes 系统图](/img/article/kubernetes/kubernetes_deployment_platform.png)
+ ![Kubernetes 系统图](/img/illustration/kubernetes/kubernetes_deployment_platform.png)
 
  - 帮助开发者聚焦核心应用功能
 
@@ -76,7 +76,7 @@ Kubernetes是一个容器调度管理系统，整个系统由一个主节点和�
 
  - 工作节点：运行用户实际部署的应用
 
- ![Kubernetes 组件架构图](/img/article/kubernetes/kubernetes_architecture.png)
+ ![Kubernetes 组件架构图](/img/illustration/kubernetes/kubernetes_architecture.png)
 
 <b>控制面板</b>
 
@@ -99,7 +99,7 @@ Kubernetes是一个容器调度管理系统，整个系统由一个主节点和�
 
 为了在 Kubernetes 中运行应用，首先需要将应用打包进一个或多个容器镜像。再将镜像推送到镜像仓库，然后将应用的描述发布到 Kubernetes API 服务器。
 
- ![Kubernetes 运行应用](/img/article/kubernetes/kubernetes_run_application.png)
+ ![Kubernetes 运行应用](/img/illustration/kubernetes/kubernetes_run_application.png)
 
 ## 3.5 使用 Kubernetes 的好处
 
