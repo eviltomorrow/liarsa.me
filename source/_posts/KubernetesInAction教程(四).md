@@ -17,6 +17,11 @@ index_img: https://liarsa-me.oss-cn-beijing.aliyuncs.com/img/logo/kubernetes.png
 
 ## 4.1. 保持 pod 健康
 
+Kubernetes 可以通过存活探针（liveness probe）检查容器是否还在运行。可以为 pod 中的每个容器单独指定存活探针。如果探测失败，Kubernetes 将定期执行探针并重启容器。
+
+ Kubernetes 包括三种探针：
+
+ - HTTP GET 探针
 
 <hr/>
 <b>参考：</b>
