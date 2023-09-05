@@ -39,6 +39,15 @@ Kubernetes 项目最主要的设计思想就是，以统一的方式抽象底层
 
  ![Kubernetes 项目核心功能“全景图”](/img/illustration/kubernetes/kubernetes_progress.png)
 
+Kubernetes 项目并没有像其他项目那样，为每一个管理功能创建一条指令，然后在项目中实现其中的逻辑。这种做法的确可以解决当前的问题。但是在更多的问题出现之后，往往会力不从心。
+
+相比之下，在 kubernetes 中，我们推崇使用的方法是：
+
+ - 首先，通过一个任务编排对象，比如 Pod，Job、CronJob 等，描述你试图管理的应用；
+ - 然后，为它定义一些运维能力对象，比如 Service、Ingress、Horizontal Pod Autoscaler 等，这些对象会负责具体的运维能力侧功能。
+
+<b>这种使用方法就是所谓的“声明式 API”。这种 API 对应的编排对象和服务对象，都是 Kubernetes 项目中的 API 对象</b>
+
 <hr/>
 <b>参考：</b>
 <ul>
