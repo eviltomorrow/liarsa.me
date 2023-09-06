@@ -83,6 +83,7 @@ $ kubectl logs -f ${pod_name}
 
 ```sh
 $ kubectl port-forward ${pod_name} 8888:8080
+$ curl localhost:8888
 ```
 
 ## 3. 使用标签组织 pod
