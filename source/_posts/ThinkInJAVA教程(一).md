@@ -8,7 +8,7 @@ tags:
     - 程序
 categories:
     - 技术
-index_img: https://liarsa-me.oss-cn-beijing.aliyuncs.com/img/logo/think_in_java.jpeg
+index_img: https://liarsa-me.oss-cn-beijing.aliyuncs.com/img/logo/think_in_java.png
 # banner_img: /img/bg/wallhaven-vqdmxm.png
 ---
 
