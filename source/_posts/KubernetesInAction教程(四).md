@@ -48,9 +48,33 @@ spec:
 
 <font style="color: #4F94CD;">推出代码 137 表示进程被外部信号终止，退出代码 128+9（SIGKILL）、推出代码 143 对应 128+15（SIGTERM）。</font>
 
+创建有效的存活探针
 
-<hr/>
+ - 存活探针应该检查什么
+ - 保持探针轻量
+ - 无须在探针中实现重试循环
+
+4.2 了解 ReplicationController
+
+ReplicationController 是一种 Kubernetes 资源，可确保它的 pod 始终保持运行状态。它的工作是确保 pod 的数量始终与其标签选择器匹配。
+
+RepliactionController 的三部分：
+
+  - label selector（标签选择器），用于确定 ReplicationController 作用域中有哪些 pod
+  - replica count（副本个数），指定应运行的 pod 数量。
+  - pod template（pod 模板），用于创建新的 pod 的副本。
+
+只有变更副本数目的个数会影响现有 pod，更改标签选择器和 pod 模板对现有 pod 没有影响。
+
+ReplicationController 的好处：
+
+ - 确保一个 pod（或多个 pod 副本）持续运行，方法是现有 pod 丢失时启动一个新的 pod。
+ - 集群节点发生故障时，它将为故障节点上运行的所有 pod（即受 ReplicationController 控制的节点上的那些 pod）创建替代副本。
+ - 能轻松实现 pod 的水平伸缩。
+
+
+<!-- <hr/>
 <b>参考：</b>
 <ul>
     <li>[1] <a href="https://developer.aliyun.com/article/745468" style="font-weight: bold;">[Kubernetes必备知识： pod网络模型]</a></li>
-</ul>
+</ul> -->
