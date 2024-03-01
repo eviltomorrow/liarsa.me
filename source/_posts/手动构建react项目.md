@@ -37,15 +37,19 @@ $ touch src/index.js
 
 > index.js 内容
 ```js
-import React from 'react';
-import reactDom from 'react-dom';
+import React, {StrictMode} from 'react';
+import { createRoot } from "react-dom/client";
 
 const App = () => (
-  <div>
-    test page
-  </div>
+  <StrictMode>
+    <div>
+      test page
+    </div>
+  </StrictMode>
 );
-reactDom.render(<App/>, document.getElementById('root'));
+const root = createRoot(document.getElementById("root"));
+root.render(<App/>);
+
 ```
 
 - 创建模板文件 <span style="color:#ffbf00">/public/index.html</span> webpack 打包后的文件将添加到该文件中
