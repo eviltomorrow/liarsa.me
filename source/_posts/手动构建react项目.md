@@ -9,7 +9,7 @@ tags:
     - 前端
 categories:
     - 前端
-index_img: https://liarsa-me.oss-cn-beijing.aliyuncs.com/img/logo/the_alchemy_of_finance.jpg
+index_img: https://liarsa-me.oss-cn-beijing.aliyuncs.com/img/logo/react.jpg
 # banner_img: /img/bg/wallhaven-vqdmxm.png
 ---
 
