@@ -9,7 +9,7 @@ tags:
 - MySQL
 categories:
 - 技术
-index_img: https://liarsa-me.oss-cn-beijing.aliyuncs.com/img/logo/mysql.jpg
+index_img: /img/logo/mysql.jpg
 # banner_img: /img/bg/wallhaven-vqdmxm.png
 ---
 
