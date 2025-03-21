@@ -1,0 +1,60 @@
+baseURL = 'https://www.liarsa.me/'
+languageCode = 'zh_CN'
+title = '致橡树'
+theme = 'typo'
+
+[taxonomies]
+tag = 'tags'
+
+[params]
+# Meta description
+description = "A Personal Blog"
+
+showFooter = true
+footerContent = "Copyright @2025 Liarsa Shepard."
+
+
+# Appearance settings
+theme = 'light'
+colorPalette = 'default'
+hideHeader = true
+
+# Intro on main page, content is markdown
+homeIntroTitle = ''
+homeIntroContent = """
+"""
+
+# Collection to display on home
+# homeCollectionTitle = 'Posts'
+# homeCollection = 'blog'
+
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = '2 Jan 2006'
+
+# Breadcrumbs
+[params.breadcrumbs]
+enabled = true
+showCurrentPage = true
+home = "Home"
+
+# Social icons
+[[params.social]]
+name = "github"
+url = "https://github.com/eviltomorrow"
+
+# Main menu pages
+[[params.menu]]
+name = "Home"
+url = "/"
+
+[[params.menu]]
+name = "Blogs"
+url = "/blog"
+
+# Syntax highlight on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+

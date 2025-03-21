@@ -1,0 +1,4 @@
+/* Place custom css here */
+:root {
+    --main-width: 900px; /* overrides default of 780px */
+}
