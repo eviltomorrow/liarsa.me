@@ -15,7 +15,7 @@ footerContent = "Copyright @2025 Liarsa Shepard."
 
 
 # Appearance settings
-theme = 'light'
+theme = 'auto'
 colorPalette = 'default'
 hideHeader = true
 
