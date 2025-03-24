@@ -1,0 +1,103 @@
+baseURL = 'https://www.liarsa.me/'
+languageCode = 'zh_CN'
+title = '致橡树'
+defaultContentLanguage = "zh"
+enableRobotsTXT = true
+theme = "gokarna"
+
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "<span data-feather='home'></span>"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    # Display name
+    name = "Posts"
+
+    # Relative URL slug (appended to baseURL)
+    url = "/posts/"
+
+    # Lower weights are listed first in the menu (leftmost); higher weights are
+    # listed last in the menu (rightmost)
+    weight = 1
+
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+    
+  [[menu.main]]
+    # Unique identifiers are required for menu entries without a name property,
+    # or for menu entries which re-use a name
+    identifier = "github"
+
+    # Absolute URL to external resource
+    url = "https://github.com/eviltomorrow"
+    weight = 3
+    
+    # Surround the menu entry (or name) with HTML content, such as Feather
+    # icons: https://feathericons.com
+    pre = "<span data-feather='github'></span>"
+    post = ""
+
+[params]
+  socialIcons = [
+      {name = "github", url = "https://github.com/eviltomorrow"},
+  ]
+  # Choose the color shown when hyperlinks are hovered over
+  accentColor = "#FF4D4D"
+
+  # Resource URL for the site avatar (home page and header)
+  avatarURL = "/images/header.jpg"
+
+  # Describe the avatar for screen readers
+  avatarAltText = "avatar"
+
+  # Set the avatar's size: size-xs, size-s, size-m, size-l & size-xl
+  avatarSize = "size-m"
+
+  # Inject arbitrary HTML via the <head> tag
+  # Best used for importing custom JavaScript, CSS, or analytics
+  customHeadHTML = ""
+
+  # Configure how post dates are displayed
+  dateFormat = "January 2, 2006"
+  
+  # Home page meta description
+  description = "故人陆续凋零，好似风中落叶"
+
+  # Footer text (i.e. author/project name)
+  footer = "Liarsa Shepard."
+
+  # Define SEO keywords
+  metaKeywords = ["blog", "liarsa"]
+
+  # Define how many posts are displayed on the home page
+  # showPostsOnHomePage must be "popular" or "recent"
+  numberPostsOnHomePage = 4
+
+  # Display a "back to top" button on posts and pages: true, false
+  # May not render on smaller screen sizes
+  showBackToTopButton = true
+
+  # Display posts on the home page:
+  # "popular" (order posts by weight)
+  # "recent" (order posts by date)
+  # "", unset (do not display)
+  showPostsOnHomePage = "recent"
+
+  # Show the previous and next post in your timeline: "true", "false"
+  # Incompatible with Weight
+  togglePreviousAndNextButtons = true
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 4
+    ordered = false
+
+[minify]
+    minifyOutput = true
