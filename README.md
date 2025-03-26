@@ -1,1 +1,1 @@
-[(https://www.liarsa.me)]  liarsa.me
+[liarsa.me](https://www.liarsa.me)
