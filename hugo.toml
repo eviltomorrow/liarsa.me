@@ -77,7 +77,7 @@ theme = "gokarna"
 
   # Define how many posts are displayed on the home page
   # showPostsOnHomePage must be "popular" or "recent"
-  numberPostsOnHomePage = 4
+  numberPostsOnHomePage = 10
 
   # Display a "back to top" button on posts and pages: true, false
   # May not render on smaller screen sizes
@@ -92,6 +92,8 @@ theme = "gokarna"
   # Show the previous and next post in your timeline: "true", "false"
   # Incompatible with Weight
   togglePreviousAndNextButtons = true
+
+  pygmentsStyle = "monokai"
 
 [markup]
   [markup.tableOfContents]
